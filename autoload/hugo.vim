@@ -37,11 +37,6 @@ function! hugo#post()
   call s:create_post(title)
 endfunction
 
-function! hugo#build()
-  call jobstart([expand(g:hugo_build_script_path)])
-  echomsg 'site is being built'
-endfunction
-
 function! hugo#server(bang)
   if a:bang == 0
     let s:id = jobstart(['hugo', 'server', '-D', '-p', g:hugo_server_port], {'cwd': expand(g:hugo_home_path)})
