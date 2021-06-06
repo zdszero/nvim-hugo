@@ -10,6 +10,7 @@ A (neo)vim plugin that helps you write hugo posts quickly
                   make sure vim-fzf plugin is installed before using this command.
 :HugoServer<cr>   start server in your hugo directory
 :HugoServer!<cr>  stop hugo server
+:HugoBuild<cr>    execute build script to build your path
 ```
 
 ## Options
@@ -46,6 +47,14 @@ default: 'md'
 
 ```
 default: 1313
+```
+
++ g:hugo_build_script_path
+
+command `HugoBuild` requires this option to work
+
+```
+let g:hugo_build_script_path = '~/Documents/Blog/build.sh'
 ```
 
 ## Licence

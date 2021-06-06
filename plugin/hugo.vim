@@ -21,6 +21,9 @@ let g:hugo_post_template = get(g:, 'hugo_post_template', [
 let g:hugo_post_suffix = get(g:, 'hugo_post_suffix', 'md')
 let g:hugo_server_port = get(g:, 'hugo_server_port', 1313)
 
+if exists('g:hugo_build_script_path')
+  command! HugoBuild call hugo#build()
+endif
 command! HugoPost call hugo#post()
 command! HugoSearch call hugo#search()
 command! -bang HugoServer call hugo#server(<bang>0)
