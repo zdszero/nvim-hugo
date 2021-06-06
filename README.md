@@ -1,6 +1,6 @@
 # nvim-hugo
 
-A (neo)vim plugin that helps you write hugo posts quickly
+A neovim plugin that helps you write hugo posts quickly
 
 ## Commands
 
@@ -10,7 +10,7 @@ A (neo)vim plugin that helps you write hugo posts quickly
                   make sure vim-fzf plugin is installed before using this command.
 :HugoServer<cr>   start server in your hugo directory
 :HugoServer!<cr>  stop hugo server
-:HugoBuild<cr>    execute build script to build your path
+:HugoBuild<cr>    execute build script to build your site
 ```
 
 ## Options
