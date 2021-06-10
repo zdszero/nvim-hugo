@@ -1,7 +1,7 @@
 *nvim-hugo.txt*  Blogging in vim should be easy.
 
 ==============================================================================
-INTRODUCTION                                    *nvim-hugo*
+INTRODUCTION                                    *hugo-intro*
 
 This plugin is intended to help you write hugo post quicky in vim.
 
@@ -48,20 +48,20 @@ The path to your build script which you use command |HugoBuild| to execute.
 ==============================================================================
 COMMANDS                                        *hugo-commands*
 
-                                                *hugo-:HugoPost*
+                                                *HugoPost*  >
 :HugoPost<cr>       Create a new post. 
 
-                                                *hugo-:HugoSearch*
+                                                *HugoSearch*  >
 :HugoSearch<cr>     Search posts in content directory. Make sure vim-fzf
                     plugin is installed before using this command.
 
-                                                *hugo-:Server*
+                                                *HugoServer*  >
 :HugoServer<cr>     Start server in your hugo directory. You can use
                     |g:hugo_server_port| to specify the port of the server.
 
 :HugoServer!<cr>    Stop hugo server.
 
-                                                *hugo-:Build*
+                                                *HugoBuild*  >
 :HugoBuild<cr>      Execute build script to build your site.
 
 ==============================================================================
