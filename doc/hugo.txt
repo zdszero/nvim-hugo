@@ -53,7 +53,7 @@ COMMANDS                                        *hugo-commands*
 
                                                 *HugoSearch*  >
 :HugoSearch<cr>     Search posts in content directory. Make sure vim-fzf
-                    plugin is installed before using this command.
+                    or telescope is installed before using this command.
 
                                                 *HugoServer*  >
 :HugoServer<cr>     Start server in your hugo directory. You can use

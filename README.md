@@ -7,7 +7,7 @@ A neovim plugin that helps you write hugo posts quickly
 ```
 :HugoPost<cr>     create a new post.
 :HugoSearch<cr>   search posts in content directory,
-                  make sure vim-fzf plugin is installed before using this command.
+                  this command requires telescope or vim-fzf
 :HugoServer<cr>   start server in your hugo directory
 :HugoServer!<cr>  stop hugo server
 :HugoBuild<cr>    execute build script to build your site
