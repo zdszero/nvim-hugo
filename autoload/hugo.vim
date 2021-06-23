@@ -52,11 +52,18 @@ function! hugo#server(bang)
 endfunction
 
 function! hugo#search()
+  if has('nvim-0.5.0')
+    let v:errmsg = ''
+    lua require('telescope.builtin').find_files({search_dirs={vim.g.hugo_home_path .. '/content'}})
+    if v:errmsg == ''
+      return
+    endif
+  endif
   let v:errmsg = ''
-  let post_dir = g:hugo_home_path . '/content'
-  silent! call fzf#vim#files(post_dir)
-  if v:errmsg != ''
-    echomsg 'Please install fzf before using HugoSearch!'
+  let l:post_dir = g:hugo_home_path . '/content'
+  silent! call fzf#vim#files(l:post_dir)
+  if v:errmsg == ''
+    echoerr 'You should install telescope or fzf'
   endif
 endfunction
 
