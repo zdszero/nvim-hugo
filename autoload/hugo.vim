@@ -62,7 +62,7 @@ function! hugo#search()
   let v:errmsg = ''
   let l:post_dir = g:hugo_home_path . '/content'
   silent! call fzf#vim#files(l:post_dir)
-  if v:errmsg == ''
+  if v:errmsg != ''
     echoerr 'You should install telescope or fzf'
   endif
 endfunction
